@@ -8,6 +8,7 @@ local default_palette = {
 	bg_dark = "#16242d",
 	bg_dark1 = "#16242d",
 	bg_highlight = "#355066",
+	cursorline_bg = "#2b3f51",
 
 	-- Lumon accent colors (monochromatic blue palette)
 	blue = "#92c7e7",
@@ -18,7 +19,7 @@ local default_palette = {
 	blue6 = "#b5deef",
 	blue7 = "#243a50",
 
-	comment = "#355066",
+	comment = "#a4b5ad",
 	cyan = "#b5deef",
 
 	dark3 = "#355066",
@@ -114,7 +115,6 @@ function M.setup(opts)
 
 	-- Create blended colors for subtle highlights
 	colors.subtle_bg = Util.blend_bg(colors.fg, 0.10)
-	colors.cursorline_bg = Util.blend_bg(colors.fg, 0.20)
 	colors.selection_bg = Util.blend_bg(colors.fg, 0.25)
 	colors.float_bg = Util.blend_bg(colors.fg, 0.12)
 
